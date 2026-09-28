@@ -1,13 +1,13 @@
 package br.com.fiapdelivery.model;
 
 public class Pacote {
-		private String codigoRastreio;
+		private String codigoEnvio;
 		private double pesoPacote;
 		private String situacaoAtual;
 		
 		
-		public Pacote(String codigoRastreio, double pesoPacote, String situacaoAtual) {
-	        this.codigoRastreio = codigoRastreio;
+		public Pacote(String codigoEnvio, double pesoPacote, String situacaoAtual) {
+	        this.codigoEnvio = codigoEnvio;
 	        this.pesoPacote = pesoPacote;
 	        this.situacaoAtual = situacaoAtual;
 	    }
@@ -17,7 +17,7 @@ public class Pacote {
 	    }
 		
 		public String getCodigoRastreio() {
-			return codigoRastreio;
+			return codigoEnvio;
 		}
 
 		public double getPesoPacote() {

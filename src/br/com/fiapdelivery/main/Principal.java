@@ -9,13 +9,14 @@ public class Principal {
         
         Moto motoEntrega = new Moto("XYZ9876", 150.0, true); //placa, capacidade maxima, se tem ou nao bau.
 
-        Pacote pacote1 = new Pacote("BR999", 10.5, "Pendente"); //Codigo de rastreio, peso do pacote, situacao do envio.
-
+        Pacote pacote1 = new Pacote("BR999", 10.5, "Pendente"); //Codigo de envio, peso do pacote, situacao do envio.
+        Pacote pacote2 = new Pacote("BR001", 20, "pendente");
+        
         Rota rotaCaminhao = new Rota(pacote1, caminhaoEntrega);
         System.out.print("Rota 1: ");
         rotaCaminhao.enviarPacote();
 
-        Rota rotaMoto = new Rota(pacote1, motoEntrega);
+        Rota rotaMoto = new Rota(pacote2, motoEntrega);
         System.out.print("Rota 2: ");
         rotaMoto.enviarPacote();
     }
