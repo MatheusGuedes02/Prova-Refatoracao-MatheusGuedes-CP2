@@ -16,6 +16,11 @@ public class Rota {
     }
 
     public void enviarPacote() {
-        System.out.println("Levando pacote " + pacote.getCodigoRastreio() + " no veiculo " + veiculo.getPlaca());
+        if (pacote.getSituacaoAtual().equals("Enviado")) {
+        	System.out.print("O pacote " + pacote.getCodigoRastreio() + " foi enviado no veiculo " + veiculo.getPlaca());
+        }
+        else {
+        	System.out.println(" Pacote " + pacote.getCodigoRastreio() + " esperando para ser entregue pelo veiculo " + veiculo.getPlaca());
+        }
     }
 }
